@@ -3,9 +3,9 @@ FROM cities
 ORDER BY name ASC
 LIMIT 5 OFFSET 5;
 
-SELECT name, LENGTH(name) as name_length
+SELECT name, CHAR_LENGTH(name) as name_length
 FROM cities
-WHERE NOT LENGTH(name) = 8 AND NOT LENGTH(name) = 9 AND NOT LENGTH(name) = 10;
+WHERE CHAR_LENGTH(name) NOT BETWEEN 8 AND 10; 
 
 SELECT region, SUM(population) AS sum_population
 FROM cities
