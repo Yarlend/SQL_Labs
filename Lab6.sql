@@ -1,5 +1,3 @@
--- Adminer 4.8.1 MySQL 5.5.5-10.3.32-MariaDB-1:10.3.32+maria~focal dump
-
 SET NAMES utf8;
 SET time_zone = '+00:00';
 SET foreign_key_checks = 0;
@@ -32,6 +30,3 @@ CREATE TABLE `stations` (
   KEY `line_id` (`line_id`),
   CONSTRAINT `stations_ibfk_1` FOREIGN KEY (`line_id`) REFERENCES `lines` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
-
--- 2023-11-25 07:12:30
